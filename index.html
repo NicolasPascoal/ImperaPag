@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pousada Impera</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container">
+
+    <div class="logo">
+      <span>Pousada Impera</span>
+      <small>Campos do Jordão</small>
+    </div>
+
+    <nav class="nav">
+      <a href="#">Home</a>
+      <a href="#">Quartos</a>
+      <a href="#">Galeria</a>
+      <a href="#">Contato</a>
+    </nav>
+
+    <a href="#" class="btn">Reservar</a>
+
+    <button class="menu-toggle" id="menuToggle">☰</button>
+  </div>
+
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="#">Home</a>
+    <a href="#">Quartos</a>
+    <a href="#">Galeria</a>
+    <a href="#">Contato</a>
+    <a href="#" class="btn">Reservar</a>
+  </nav>
+</header>
+<section class="hero hero-bg-impera">
+  <div class="hero-content">
+    <h1>Aconchego e natureza em um só lugar</h1>
+    <p>Hospedagem exclusiva em Campos do Jordão</p>
+    <p>Reserve agora sua escapada e desconecte-se</p>
+    <a href="#" class="btn-primary">Saiba Mais</a>
+  </div>
+</section>
+
+<script>
+  const btn = document.getElementById("menuToggle");
+  const nav = document.getElementById("mobileNav");
+
+  btn.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+</script>
+
+</body>
+</html>

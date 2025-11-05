@@ -1,0 +1,225 @@
+:root {
+  --bg: #f5f2ec;
+  --text: #4a3f35;
+  --text-light: #857868;
+  --primary: #5b4636; /* tom madeira premium */
+  --radius: 4px;
+}
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  font-family: Inter, sans-serif;
+  color: var(--text);
+}
+
+/* Header */
+.header {
+  width: 100%;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  background: var(--bg);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.container {
+  width: 92%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 18px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  line-height: 1.1;
+}
+.logo small {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-light);
+}
+
+/* Desktop Menu */
+.nav {
+  display: flex;
+  gap: 32px;
+}
+.nav a {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--text);
+  text-decoration: none;
+  transition: 0.3s;
+  
+}
+.nav a:hover {
+  color: var(--primary);
+}
+
+/* Botão */
+.btn {
+  padding: 8px 18px;
+  border: 1px solid var(--primary);
+  border-radius: var(--radius);
+  font-size: 14px;
+  text-decoration: none;
+  color: var(--primary);
+  transition: 0.3s;
+}
+.btn:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+/* Mobile */
+.menu-toggle {
+  display: none;
+  font-size: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text);
+}
+
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  padding: 15px 20px;
+  background: var(--bg);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.mobile-nav a {
+  padding: 12px 0;
+  font-size: 16px;
+}
+
+.mobile-nav.active {
+  display: flex;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .nav, .btn {
+    display: none;
+  }
+  .menu-toggle {
+    display: block;
+  }
+}
+/* hero */
+/* HERO SECTION */
+.hero {
+  height: 82vh;
+  min-height: 520px;
+  background: 
+    linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.55)),
+    var(--hero-image);
+  background-blend-mode: darken;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+.hero h1, 
+.hero p {
+  color: #0f0101;
+  text-shadow: 0 4px 14px rgba(255, 255, 255, 0.75);
+}
+
+.hero-bg-impera {
+  background-image: url("img/teste.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero-content {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(6px);
+  padding: 30px 40px;
+  border-radius: 12px;
+  animation: fadeUp .9s ease both;
+}
+
+/* Headline premium */
+.hero h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.15;
+  margin-bottom: 18px;
+}
+.hero .btn-primary {
+  display: inline-block;
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 30px;
+  color: #0f0101;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(2px);
+  transition: all 0.5s ease;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Hover de luxo */
+.hero .btn-primary:hover {
+  transform: scale(1.05);
+  border-color: #0f0101;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.45);
+}
+
+/* Subtexto suave */
+.hero p {
+  font-size: 18px;
+  font-weight: 300;
+  opacity: .9;
+  margin-bottom: 32px;
+}
+
+/* Botão boutique */
+.hero-btn {
+  padding: 12px 26px;
+  font-size: 15px;
+  text-decoration: none;
+  border: 1px solid white;
+  color: #0f0101;
+  border-radius: 4px;
+  transition: .3s;
+  backdrop-filter: blur(4px);
+}
+
+.hero-btn:hover {
+  background: rgba(255,255,255,0.18);
+  transform: translateY(-2px);
+}
+
+/* Anim */
+@keyframes fadeUp {
+  from {opacity: 0; transform: translateY(14px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* Responsivo */
+@media(max-width: 768px){
+  .hero h1 {font-size: 34px;}
+  .hero p {font-size: 16px;}
+}
