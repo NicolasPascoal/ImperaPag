@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pousada Impera</title>
 
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles/home.css">
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/mobile.css">
+  <link rel="icon" type="image/png" href="img/icon.jpg">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -22,9 +25,9 @@
 
     <nav class="nav">
       <a href="#">Home</a>
-      <a href="#">Quartos</a>
-      <a href="#">Galeria</a>
-      <a href="#">Contato</a>
+      <a href="quartos.html">Quartos</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="https://api.whatsapp.com/send?phone=12988800173" target="_blank">Contato</a>
     </nav>
 
     <a href="#" class="btn">Reservar</a>
@@ -36,7 +39,7 @@
     <a href="#">Home</a>
     <a href="#">Quartos</a>
     <a href="#">Galeria</a>
-    <a href="#">Contato</a>
+    <a href="https://api.whatsapp.com/send?phone=12988800173"target="_blank">Contato</a>
     <a href="#" class="btn">Reservar</a>
   </nav>
 </header>
@@ -93,10 +96,73 @@
 
   </div>
 </section>
+<section class="rooms">
+  <div class="carrossel-container">
+    <div class="section-title">
+      <h2>Quartos destaques</h2>
+      <p>Escolha o ambiente perfeito para sua estadia em Campos de Jordão.</p>
+    </div>
+
+    <div class="rooms-grid">
+
+      <div class="room-card">
+        <div class="carousel" data-carousel>
+          <div class="carousel-images">
+            <img src="img/quartos/KingDeluxe/foto1KingDeluxe.jpg" alt="suiteDeluxe1">
+            <img src="img/quartos/KingDeluxe/foto2KingDeluxe.jpg" alt="suiteDeluxe2">
+            <img src="img/quartos/KingDeluxe/foto3KingDeluxe.jpg" alt="suiteDeluxe3">
+            <img src="img/quartos/KingDeluxe/foto4KingDeluxe.jpg" alt="suiteDeluxe4">
+            <img src="img/quartos/KingDeluxe/foto5KingDeluxe.jpg" alt="suiteDeluxe5">
+            <img src="img/quartos/KingDeluxe/foto6KingDeluxe.jpg" alt="suiteDeluxe6">
+            <img src="img/quartos/KingDeluxe/suite7KingDeluxe.jpg" alt="suiteDeluxe7">
+            <img src="img/quartos/hall/hall1.jpg" alt="hall1">
+            <img src="img/quartos/hall/hall2.jpg" alt="hall2">
+
+          </div>
+          <button class="carousel-btn prev">&#10094;</button>
+          <button class="carousel-btn next">&#10095;</button>
+        </div>
+
+        <div class="room-info">
+          <h3>Suíte King Deluxe</h3>
+          <p>terraço, cama king size, sofá cama e maior quarto</p>
+          <a href="#" class="btn-room">Ver detalhes</a>
+        </div>
+      </div>
+
+      <div class="room-card">
+        <div class="carousel" data-carousel>
+          <div class="carousel-images">
+            <img src="img/quartos/suiteJunior/suitejr2.jpg" alt="suiteJunior2">
+            <img src="img/quartos/suiteJunior/suitejr1.jpg" alt="suiteJunior1">
+            <img src="img/quartos/suiteJunior/suitejr3.jpg" alt="suiteJunior3">
+            <img src="img/quartos/suiteJunior/suitejr4.jpg" alt="suiteJunior4">
+            <img src="img/quartos/suiteJunior/suitejr5.jpg" alt="suiteJunior5">
+            <img src="img/quartos/suiteJunior/suitejr6.jpg" alt="suiteJunior6">
+            <img src="img/quartos/suiteJunior/suitejr7.jpg" alt="suiteJunior7">
+            <img src="img/quartos/suiteJunior/suitejr8.jpg" alt="suiteJunior8">
+            <img src="img/quartos/suiteJunior/suitejr9.jpg" alt="suiteJunior9">
+            <img src="img/quartos/hall/hall1.jpg" alt="hall1">
+            <img src="img/quartos/hall/hall2.jpg" alt="hall2">
+
+          </div>
+          <button class="carousel-btn prev">&#10094;</button>
+          <button class="carousel-btn next">&#10095;</button>
+        </div>
+        <div class="room-info">
+          <h3>Suíte Júnior com Terraço</h3>
+          <p>terraço, cama king size e sofá cama e quarto com o maior custo beneficio</p>
+          <a href="#" class="btn-room">Ver detalhes</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 <section class="location" id="location">
   <div class="location-container">
     <h2>Onde ficamos</h2>
-    <p>Nosso espaço está localizado em uma das regiões mais tranquilas de Campos do Jordão.</p>
+    <p>Nosso espaço está localizado em uma das regiões mais tranquilas e bem localizada de Campos do Jordão.</p>
     
     <div class="map-container">
       <iframe
@@ -119,25 +185,16 @@
     <div class="footer-content">
       <p>&copy; 2024 Pousada Impera. Todos os direitos reservados.</p>
       <div class="social-icons">
-        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
-        <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/pousadaimpera/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=12988800173" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.airbnb.com.br/users/profile/1469743340155476949?previous_page_name=PdpHomeMarketplace" target="_blank" class="social-icon"><i class="fa-brands fa-airbnb"></i></a>
+        <a href="https://www.booking.com/hotel/br/impera.pt-br.html" target="_blank" class="social-icon booking"><i class="fa-solid fa-b"></i></a>
+        
       </div>
     </div>
   </div>
 </footer>
 
-
-
-
-<script>
-  const btn = document.getElementById("menuToggle");
-  const nav = document.getElementById("mobileNav");
-
-  btn.addEventListener("click", () => {
-    nav.classList.toggle("active");
-  });
-</script>
-
 </body>
+<script src="script.js"></script>
 </html>
