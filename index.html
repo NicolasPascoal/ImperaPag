@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pousada Impera</title>
-
   <link rel="stylesheet" href="styles/home.css">
   <link rel="stylesheet" href="styles/global.css">
   <link rel="stylesheet" href="styles/mobile.css">
@@ -12,37 +11,33 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-
 <body>
-
+<!--header-->
 <header class="header">
   <div class="container">
-
     <div class="logo" href="#">
       <span>Pousada Impera</span>
       <small>Campos do Jordão</small>
     </div>
-
     <nav class="nav">
       <a href="#">Home</a>
       <a href="quartos.html">Quartos</a>
       <a href="galeria.html">Galeria</a>
-      <a href="https://api.whatsapp.com/send?phone=12988800173" target="_blank">Contato</a>
+      <a href="contato.html">Contato</a>
     </nav>
-
     <a href="#" class="btn">Reservar</a>
-
     <button class="menu-toggle" id="menuToggle">☰</button>
   </div>
-
   <nav class="mobile-nav" id="mobileNav">
-    <a href="#">Home</a>
-    <a href="#">Quartos</a>
-    <a href="#">Galeria</a>
-    <a href="https://api.whatsapp.com/send?phone=12988800173"target="_blank">Contato</a>
+    <a href="index.html">Home</a>
+    <a href="quartos.html">Quartos</a>
+    <a href="galeria.html">Galeria</a>
+    <a href="contato.html">Contato</a>
     <a href="#" class="btn">Reservar</a>
   </nav>
 </header>
+
+<!--hero-->
 <section class="hero hero-bg-impera">
   <div class="hero-content">
     <h1>Aconchego e natureza em um só lugar</h1>
@@ -52,50 +47,48 @@
   </div>
   <div class="section-divider"></div>
 </section>
+
+<!--freatures-->
 <section class="features">
   <div class="features-container">
-
     <div class="section-title">
       <h2>O que oferecemos</h2>
       <p>Conforto, praticidade e uma experiência inesquecível na Serra.</p>
     </div>
-
     <div class="features-grid">
-
       <div class="feature-item">
         <span class="icon">📶</span>
         <h3>Wi-Fi Gratuito</h3>
         <p>Internet de alta qualidade em toda a propriedade.</p>
       </div>
-
       <div class="feature-item">
         <span class="icon">❄️</span>
         <h3>Conforto Completo</h3>
         <p>Ar-condicionado, TV de tela plana e comodidades modernas.</p>
       </div>
-
       <div class="feature-item">
         <span class="icon">🏔</span>
         <h3>Vista Privilegiada</h3>
         <p>Unidades com varanda e vista encantadora para a cidade.</p>
       </div>
-
       <div class="feature-item">
         <span class="icon">🛁</span>
         <h3>Estrutura Premium</h3>
         <p>Banheiros privativos com secador de cabelo e conforto exclusivo.</p>
       </div>
-
       <div class="feature-item">
         <span class="icon">📍</span>
         <h3>Localização Ideal</h3>
         <p>Próximo ao Amantikir, Parque Capivari, Tarundu e Horto Florestal.</p>
       </div>
-
     </div>
-
+    <div class="features-grid">
+      
+    </div>
   </div>
 </section>
+
+<!--rooms-->
 <section class="rooms">
   <div class="carrossel-container">
     <div class="section-title">
@@ -104,7 +97,7 @@
     </div>
 
     <div class="rooms-grid">
-
+      <!-- card 1 -->
       <div class="room-card">
         <div class="carousel" data-carousel>
           <div class="carousel-images">
@@ -117,19 +110,17 @@
             <img src="img/quartos/KingDeluxe/suite7KingDeluxe.jpg" alt="suiteDeluxe7">
             <img src="img/quartos/hall/hall1.jpg" alt="hall1">
             <img src="img/quartos/hall/hall2.jpg" alt="hall2">
-
           </div>
           <button class="carousel-btn prev">&#10094;</button>
           <button class="carousel-btn next">&#10095;</button>
         </div>
-
         <div class="room-info">
           <h3>Suíte King Deluxe</h3>
-          <p>terraço, cama king size, sofá cama e maior quarto</p>
+          <p>terraço, cama king size, até 4 pessoas, ar-condicionado e aquecedor</p>
           <a href="#" class="btn-room">Ver detalhes</a>
         </div>
       </div>
-
+      <!-- card 2 -->
       <div class="room-card">
         <div class="carousel" data-carousel>
           <div class="carousel-images">
@@ -151,14 +142,18 @@
         </div>
         <div class="room-info">
           <h3>Suíte Júnior com Terraço</h3>
-          <p>terraço, cama king size e sofá cama e quarto com o maior custo beneficio</p>
+          <p>terraço, cama king size e sofá cama,  quarto com o maior custo beneficio e ar-condicionado e aquecedor</p>
           <a href="#" class="btn-room">Ver detalhes</a>
         </div>
       </div>
-
+    </div>
+    <div class="ver-todos">
+      <a href="quartos.html" class="btn-room">Ver todos os quartos</a>
     </div>
   </div>
 </section>
+
+<!--location-->
 <section class="location" id="location">
   <div class="location-container">
     <h2>Onde ficamos</h2>
@@ -180,6 +175,7 @@
   <div class="section-divider"></div>
 </section>
 
+<!--footer-->
 <footer>
   <div class="container">
     <div class="footer-content">
